@@ -1,0 +1,1 @@
+{"timestamp":1786495060000,"imageType":"FLUORESCENCE","server":{"width":23036,"height":26276,"sizeC":3,"sizeZ":1,"sizeT":1},"hierarchy":{"nObjects":19664,"objectTypeCounts":{"Root objects":1,"Annotations":4,"Cells":19659},"annotationClassificationCounts":{"ROIs":3,"Tissue":1},"detectionClassificationCounts":{"Her2-":19650,"Her2+":9}}}

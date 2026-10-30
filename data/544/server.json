@@ -1,0 +1,98 @@
+{
+  "builderType": "uri",
+  "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+  "uri": "file:///Volumes/Untitled/DORMANCY%20PROJECT/IMAGES/20250706/JG-22-23_T20_8.vsi",
+  "args": [
+    "--series",
+    "2"
+  ],
+  "metadata": {
+    "name": "JG-22-23_T20_8.vsi - 20x_DAPI, DAPI, TRITC, Cy5_01",
+    "width": 40954,
+    "height": 42046,
+    "sizeZ": 1,
+    "sizeT": 1,
+    "channelType": "DEFAULT",
+    "isRGB": false,
+    "pixelType": "UINT16",
+    "levels": [
+      {
+        "downsample": 1.0,
+        "width": 40954,
+        "height": 42046
+      },
+      {
+        "downsample": 2.0,
+        "width": 20477,
+        "height": 21023
+      },
+      {
+        "downsample": 4.0,
+        "width": 10239,
+        "height": 10512
+      },
+      {
+        "downsample": 8.0,
+        "width": 5120,
+        "height": 5256
+      },
+      {
+        "downsample": 16.0,
+        "width": 2560,
+        "height": 2628
+      },
+      {
+        "downsample": 32.0,
+        "width": 1280,
+        "height": 1314
+      },
+      {
+        "downsample": 64.0,
+        "width": 640,
+        "height": 657
+      },
+      {
+        "downsample": 128.0,
+        "width": 320,
+        "height": 329
+      }
+    ],
+    "channels": [
+      {
+        "name": "IgnoreChannel",
+        "color": -16777216
+      },
+      {
+        "name": "DAPI",
+        "color": -16776961
+      },
+      {
+        "name": "TRITC",
+        "color": -16711936
+      },
+      {
+        "name": "Cy5",
+        "color": -65281
+      }
+    ],
+    "pixelCalibration": {
+      "pixelWidth": {
+        "value": 0.3250034070254192,
+        "unit": "µm"
+      },
+      "pixelHeight": {
+        "value": 0.3250043619423506,
+        "unit": "µm"
+      },
+      "zSpacing": {
+        "value": 1.0,
+        "unit": "z-slice"
+      },
+      "timeUnit": "SECONDS",
+      "timepoints": []
+    },
+    "magnification": 20.0,
+    "preferredTileWidth": 512,
+    "preferredTileHeight": 512
+  }
+}

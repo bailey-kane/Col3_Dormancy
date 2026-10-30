@@ -1,0 +1,94 @@
+{
+  "builderType": "uri",
+  "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+  "uri": "file:///Volumes/Untitled/DORMANCY%20PROJECT/IMAGES/20260424/JG-11-23_B2_7.vsi",
+  "args": [
+    "--series",
+    "2"
+  ],
+  "metadata": {
+    "name": "JG-11-23_B2_7.vsi - 20x_DAPI, TRITC, Cy5_01",
+    "width": 35469,
+    "height": 41844,
+    "sizeZ": 1,
+    "sizeT": 1,
+    "channelType": "DEFAULT",
+    "isRGB": false,
+    "pixelType": "UINT16",
+    "levels": [
+      {
+        "downsample": 1.0,
+        "width": 35469,
+        "height": 41844
+      },
+      {
+        "downsample": 2.0,
+        "width": 17735,
+        "height": 20922
+      },
+      {
+        "downsample": 4.0,
+        "width": 8868,
+        "height": 10461
+      },
+      {
+        "downsample": 8.0,
+        "width": 4434,
+        "height": 5231
+      },
+      {
+        "downsample": 16.0,
+        "width": 2217,
+        "height": 2616
+      },
+      {
+        "downsample": 32.0,
+        "width": 1109,
+        "height": 1308
+      },
+      {
+        "downsample": 64.0,
+        "width": 555,
+        "height": 654
+      },
+      {
+        "downsample": 128.0,
+        "width": 278,
+        "height": 327
+      }
+    ],
+    "channels": [
+      {
+        "name": "DAPI",
+        "color": -16776961
+      },
+      {
+        "name": "TRITC",
+        "color": -16711936
+      },
+      {
+        "name": "Cy5",
+        "color": -65281
+      }
+    ],
+    "pixelCalibration": {
+      "pixelWidth": {
+        "value": 0.325003292657591,
+        "unit": "µm"
+      },
+      "pixelHeight": {
+        "value": 0.3250027697791933,
+        "unit": "µm"
+      },
+      "zSpacing": {
+        "value": 1.0,
+        "unit": "z-slice"
+      },
+      "timeUnit": "SECONDS",
+      "timepoints": []
+    },
+    "magnification": 20.0,
+    "preferredTileWidth": 512,
+    "preferredTileHeight": 512
+  }
+}

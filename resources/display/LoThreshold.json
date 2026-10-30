@@ -1,0 +1,40 @@
+{
+  "name": "LoThreshold",
+  "gamma": 1.0,
+  "invertBackground": false,
+  "channels": [
+    {
+      "name": "DAPI (C1)",
+      "minDisplay": 12.334053,
+      "maxDisplay": 1267.7762,
+      "color": {
+        "red": 0,
+        "green": 0,
+        "blue": 255
+      },
+      "isShowing": true
+    },
+    {
+      "name": "TRITC (C2)",
+      "minDisplay": 12.394444,
+      "maxDisplay": 194.60132,
+      "color": {
+        "red": 0,
+        "green": 255,
+        "blue": 0
+      },
+      "isShowing": true
+    },
+    {
+      "name": "Cy5 (C3)",
+      "minDisplay": 22.389845,
+      "maxDisplay": 126.99015,
+      "color": {
+        "red": 255,
+        "green": 0,
+        "blue": 255
+      },
+      "isShowing": true
+    }
+  ]
+}

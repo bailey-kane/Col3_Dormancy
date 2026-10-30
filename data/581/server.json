@@ -1,0 +1,98 @@
+{
+  "builderType": "uri",
+  "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+  "uri": "file:///Volumes/Untitled/DORMANCY%20PROJECT/IMAGES/20250706/JG-59-22_F6_3.vsi",
+  "args": [
+    "--series",
+    "2"
+  ],
+  "metadata": {
+    "name": "JG-59-22_F6_3.vsi - 20x_DAPI, DAPI, TRITC, Cy5_01",
+    "width": 55100,
+    "height": 57153,
+    "sizeZ": 1,
+    "sizeT": 1,
+    "channelType": "DEFAULT",
+    "isRGB": false,
+    "pixelType": "UINT16",
+    "levels": [
+      {
+        "downsample": 1.0,
+        "width": 55100,
+        "height": 57153
+      },
+      {
+        "downsample": 2.0,
+        "width": 27550,
+        "height": 28577
+      },
+      {
+        "downsample": 4.0,
+        "width": 13775,
+        "height": 14289
+      },
+      {
+        "downsample": 8.0,
+        "width": 6888,
+        "height": 7145
+      },
+      {
+        "downsample": 16.0,
+        "width": 3444,
+        "height": 3573
+      },
+      {
+        "downsample": 32.0,
+        "width": 1722,
+        "height": 1787
+      },
+      {
+        "downsample": 64.0,
+        "width": 861,
+        "height": 894
+      },
+      {
+        "downsample": 128.0,
+        "width": 431,
+        "height": 447
+      }
+    ],
+    "channels": [
+      {
+        "name": "IgnoreChannel",
+        "color": -16777216
+      },
+      {
+        "name": "DAPI",
+        "color": -16776961
+      },
+      {
+        "name": "TRITC",
+        "color": -16711936
+      },
+      {
+        "name": "Cy5",
+        "color": -65281
+      }
+    ],
+    "pixelCalibration": {
+      "pixelWidth": {
+        "value": 0.32500105299308574,
+        "unit": "µm"
+      },
+      "pixelHeight": {
+        "value": 0.3250009372400115,
+        "unit": "µm"
+      },
+      "zSpacing": {
+        "value": 1.0,
+        "unit": "z-slice"
+      },
+      "timeUnit": "SECONDS",
+      "timepoints": []
+    },
+    "magnification": 20.0,
+    "preferredTileWidth": 512,
+    "preferredTileHeight": 512
+  }
+}

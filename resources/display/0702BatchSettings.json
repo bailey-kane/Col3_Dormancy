@@ -1,0 +1,51 @@
+{
+  "name": "0702BatchSettings",
+  "gamma": 1.0,
+  "invertBackground": false,
+  "channels": [
+    {
+      "name": "IgnoreChannel (C1)",
+      "minDisplay": 40.423622,
+      "maxDisplay": 18491.814,
+      "color": {
+        "red": 0,
+        "green": 0,
+        "blue": 0
+      },
+      "isShowing": true
+    },
+    {
+      "name": "DAPI (C2)",
+      "minDisplay": 409.51263,
+      "maxDisplay": 9710.696,
+      "color": {
+        "red": 0,
+        "green": 0,
+        "blue": 255
+      },
+      "isShowing": true
+    },
+    {
+      "name": "TRITC (C3)",
+      "minDisplay": 820.2061,
+      "maxDisplay": 3201.5095,
+      "color": {
+        "red": 0,
+        "green": 255,
+        "blue": 0
+      },
+      "isShowing": true
+    },
+    {
+      "name": "Cy5 (C4)",
+      "minDisplay": 1939.5055,
+      "maxDisplay": 9773.86,
+      "color": {
+        "red": 255,
+        "green": 0,
+        "blue": 255
+      },
+      "isShowing": true
+    }
+  ]
+}

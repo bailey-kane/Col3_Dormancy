@@ -1,0 +1,1 @@
+{"timestamp":1786496608000,"imageType":"FLUORESCENCE","server":{"width":36442,"height":42653,"sizeC":3,"sizeZ":1,"sizeT":1},"hierarchy":{"nObjects":111647,"objectTypeCounts":{"Root objects":1,"Annotations":4,"Cells":111642},"annotationClassificationCounts":{"Tissue":1,"iBALT":1,"Not Lung":1,"ROI":1},"detectionClassificationCounts":{"Her2-":104903,"Her2+":6739}}}

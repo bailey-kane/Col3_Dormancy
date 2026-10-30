@@ -1,0 +1,98 @@
+{
+  "builderType": "uri",
+  "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+  "uri": "file:///Volumes/Untitled/DORMANCY%20PROJECT/IMAGES/20250706/JG-30-23_N14_10.vsi",
+  "args": [
+    "--series",
+    "2"
+  ],
+  "metadata": {
+    "name": "JG-30-23_N14_10.vsi - 20x_DAPI, DAPI, TRITC, Cy5_01",
+    "width": 42786,
+    "height": 42657,
+    "sizeZ": 1,
+    "sizeT": 1,
+    "channelType": "DEFAULT",
+    "isRGB": false,
+    "pixelType": "UINT16",
+    "levels": [
+      {
+        "downsample": 1.0,
+        "width": 42786,
+        "height": 42657
+      },
+      {
+        "downsample": 2.0,
+        "width": 21393,
+        "height": 21329
+      },
+      {
+        "downsample": 4.0,
+        "width": 10697,
+        "height": 10665
+      },
+      {
+        "downsample": 8.0,
+        "width": 5349,
+        "height": 5333
+      },
+      {
+        "downsample": 16.0,
+        "width": 2675,
+        "height": 2667
+      },
+      {
+        "downsample": 32.0,
+        "width": 1338,
+        "height": 1334
+      },
+      {
+        "downsample": 64.0,
+        "width": 669,
+        "height": 667
+      },
+      {
+        "downsample": 128.0,
+        "width": 335,
+        "height": 334
+      }
+    ],
+    "channels": [
+      {
+        "name": "IgnoreChannel",
+        "color": -16777216
+      },
+      {
+        "name": "DAPI",
+        "color": -16776961
+      },
+      {
+        "name": "TRITC",
+        "color": -16711936
+      },
+      {
+        "name": "Cy5",
+        "color": -65281
+      }
+    ],
+    "pixelCalibration": {
+      "pixelWidth": {
+        "value": 0.3250067557758066,
+        "unit": "µm"
+      },
+      "pixelHeight": {
+        "value": 0.32500304821362686,
+        "unit": "µm"
+      },
+      "zSpacing": {
+        "value": 1.0,
+        "unit": "z-slice"
+      },
+      "timeUnit": "SECONDS",
+      "timepoints": []
+    },
+    "magnification": 20.0,
+    "preferredTileWidth": 512,
+    "preferredTileHeight": 512
+  }
+}

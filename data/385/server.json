@@ -1,0 +1,9 @@
+{
+  "builderType": "uri",
+  "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+  "uri": "file:///Volumes/Untitled/DORMANCY%20PROJECT/IMAGES/20250729/JG-59-22_P16_2.vsi",
+  "args": [
+    "--series",
+    "0"
+  ]
+}

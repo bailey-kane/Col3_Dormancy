@@ -1,0 +1,80 @@
+{
+  "pathClasses": [
+    {
+      "name": "Tumor",
+      "color": -3670016
+    },
+    {
+      "name": "Stroma",
+      "color": -6895466
+    },
+    {
+      "name": "Immune cells",
+      "color": -6268256
+    },
+    {
+      "name": "Necrosis",
+      "color": -13487566
+    },
+    {
+      "name": "Other",
+      "color": -14336
+    },
+    {
+      "name": "Region*",
+      "color": -16777036
+    },
+    {
+      "name": "Ignore*",
+      "color": -4934476
+    },
+    {
+      "name": "Positive",
+      "color": -377282
+    },
+    {
+      "name": "Negative",
+      "color": -9408287
+    },
+    {
+      "name": "Her2+",
+      "color": -16711936
+    },
+    {
+      "name": "Col3a1+",
+      "color": -6467089
+    },
+    {
+      "name": "Col3a1-",
+      "color": -13421773
+    },
+    {
+      "name": "Her2-",
+      "color": -13421773
+    },
+    {
+      "name": "Tissue",
+      "color": -11325665
+    },
+    {
+      "name": "iBALT",
+      "color": -16711681
+    },
+    {
+      "name": "Not Lung",
+      "color": -6750208
+    },
+    {
+      "name": "Col5a1+",
+      "color": -974724
+    },
+    {
+      "name": "Col5a1-",
+      "color": -13421773
+    },
+    {
+      "name": "Macrophage",
+      "color": -13413997
+    }
+  ]
+}
