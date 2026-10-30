@@ -1,0 +1,106 @@
+---
+title: "Dormancy Project"
+author: "Bailey Kane"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libraries, include=FALSE}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(reshape2)
+
+# define functions
+se <- function(x){
+  sd(x)/sqrt(length(x))
+}
+me <- function(x, CI=0.95){
+  (qt(CI,df=length(x)-1)*sd(x))/sqrt(length(x))
+}
+```
+
+## Col3a1 Experiment
+
+```{r read csv and print samples and treatments, echo=FALSE}
+# read csv
+col3data <- read.csv("C:/Users/bsier/Desktop/Col1_Col3_Timepoints/Col3_Her2_DPs.csv")
+col3data$ShortName = substring(col3data$SampleName, 4, 14) %>%           gsub("\\.","", .)
+treatment_levels <- c("MMTV-Her2 PBS",
+                      "MMTV-Her2 3 dpi",
+                      "MMTV-Her2 9 dpi",
+                      "MMTV-Her2 28 dpi",
+                      "MMTV-Her2 60 dpi",
+                      "MMTV-Her2 9 mpi",
+                      "IL6KO PBS",
+                      "IL6KO 3 dpi",
+                      "IL6KO 9 dpi")
+col3data$Treatment = factor(col3data$Treatment, treatment_levels)
+
+col3data %>%
+  group_by(ShortName) %>%
+  reframe(Treatment = unique(Treatment))
+
+
+# summary table
+gsum <- col3data %>%
+  group_by(Treatment) %>%
+  summarize(meanHer2count = mean(Her2PrevalencePerThousandDetections),
+            meanDPcount = mean(DpPrevalencePerThousandDetections),
+            meanDPpercent = mean(DoublePosPercent),
+            meDPpercent = me(DoublePosPercent),
+            sdDPpercent = sd(DoublePosPercent),
+            meDPcount = me(DpPrevalencePerThousandDetections),
+            meHer2count = me(Her2PrevalencePerThousandDetections),
+            Treatment = Treatment[1]
+            ) %>%
+  melt(., id.vars = colnames(.[,-c(2,3)]), #preserve all cols but her2ct and dpct
+       measure.vars = c("meanHer2count",
+                        "meanDPcount"),
+       variable.name = "Type",
+       value.name = "Count")
+
+col3data %>%
+  group_by(ShortName) %>%
+  reframe(Treatment = unique(Treatment))
+```
+### Her2+ and Her2+:Col3a1+ Detections per Thousand Cells
+
+```{r}
+# double bar plot with counts (with <0.01 for 0 values)
+ggplot(gsum, aes(Treatment, Count, fill=Type)) +
+  geom_bar(stat = "identity", pos = "dodge") +
+  coord_flip() +
+  theme_classic() +
+  ylim(0,35) +
+  ylab("Count per Thousand Cells") +
+  xlab("Treatment") +
+  labs(fill = "Cell type") +
+  geom_text(aes(label = ifelse(Count >0, as.character(round(Count,2)), "<0.01")),
+            hjust = -0.05, size = 3,
+            position = position_dodge(width = 0.9)) +
+  scale_fill_manual(labels = c("Her2+ Only", "Her2+:Col3a1+"),
+                    values=c("#89f336", "#E0B0FF"))
+```
+### Mean Proportion of Double Positive/Her2+ Cells
+```{r}
+# bar plot with 95% CI
+ggplot(dpsum, aes(Treatment, mean)) +
+  geom_bar(stat = "identity", fill = "#E0B0FF") +
+  theme_classic() +
+  geom_errorbar(aes(x=Treatment,
+                    ymin = round(mean-me,2),
+                    ymax = round(mean+me,2)),
+                width = 0.2) +
+  geom_point(data = col3data, aes(Treatment, DoublePosPercent)) +
+  coord_cartesian(ylim = c(0,1.2)) +
+  theme(axis.text.x = element_text(angle=45, vjust = 1, hjust = 1)) +
+  xlab("Sample ID") +
+  ylab("Mean Proportion (95% CI)") +
+  ggtitle("Double positivity as a proportion of Her2+ cells")
+```
+
